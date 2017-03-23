@@ -1,0 +1,25 @@
+{
+  "name": "rachel-jun-channel",
+  "version": "0.0.1",
+  "description": "The app about a \"Rachel & Jun\" YouTube channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Petr73ru/rachel-jun-channel.git"
+  },
+  "keywords": [
+    "Rachel",
+    "&",
+    "Jun",
+    "channel"
+  ],
+  "author": "Peter73",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Petr73ru/rachel-jun-channel/issues"
+  },
+  "homepage": "https://rachel-jun-channel.herokuapp.com/"
+}

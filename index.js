@@ -38,7 +38,7 @@ app.get('/', (req, res)=>{
         res.write(i + ':\n')
         res.write('title : '+item.snippet.title + '\n'+
         'description : '+item.snippet.description + '\n'+
-        'channelId : ' +item.id.videoId + '\n\n' )
+        'videoId : ' +item.id.videoId + '\n\n' )
         i++
     }
 

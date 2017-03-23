@@ -1,2 +1,2 @@
 # rachel-jun-channel
-App for a Rachil &amp; Jun Channel 
+App for a Rachel &amp; Jun Channel 

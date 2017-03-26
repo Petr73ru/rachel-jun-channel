@@ -17,7 +17,7 @@ app.get('/', (req, res)=>{
         let items = data,
         i=1 //счётчик
         for (let item of items){
-            res.write('<div class="card_of_video">' + i + ':<br>')
+            res.write('<div class="card_for_video_info">' + i + ':<br>')
             res.write('title : '+item.snippet.title + '<br>'+
             'publishedAt : ' + item.snippet.publishedAt + '<br>' +
             'description : '+item.snippet.description + '<br>'+
@@ -30,7 +30,7 @@ app.get('/', (req, res)=>{
 
 app.get('/html', (req, res)=> {
 
-    fs.readFile("frond_end/index.html", function(err, data){
+    fs.readFile("index.html", function(err, data){
         if (err) {
             res.writeHead(404)
             res.write('Not found html file!')

@@ -13,8 +13,8 @@ app.get('/', (req, res)=>{
         if (err) {
             console.error(err)
         }
-
-	// res.writeHead({'Access-Control-Allow-Origin': '*'})
+	      res.writeHead(200, {'Content-Type': 'text/plain'});
+        
         let items = data,
         i=1 //счётчик
         for (let item of items){

@@ -13,18 +13,11 @@ app.get('/', (req, res)=>{
         if (err) {
             console.error(err)
         }
-	      res.writeHead(200, {'Content-Type': 'text/plain'});
-        
-        let items = data,
-        i=1 //счётчик
-        for (let item of items){
-            res.write('<div class="card_for_video_info">' + i + ':<br>')
-            res.write('title : '+item.snippet.title + '<br>'+
-            'publishedAt : ' + item.snippet.publishedAt + '<br>' +
-            'description : '+item.snippet.description + '<br>'+
-            'videoId : ' +item.id.videoId + '</div><br><br>' )
-            i++
-        }
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+	      res.writeHead(200, {'Content-Type': 'application/json'});
+
+        res.write(JSON.stringify(data))
         res.end()
     })
 })

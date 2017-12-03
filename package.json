@@ -4,7 +4,7 @@
   "description": "The app about a \"Rachel & Jun\" YouTube channel",
   "main": "index.js",
   "scripts": {
-    "test": "test.js"
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",

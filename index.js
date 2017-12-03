@@ -14,6 +14,7 @@ app.get('/', (req, res)=>{
             console.error(err)
         }
 
+	res.writeHead({'Access-Control-Allow-Origin': '*'})
         let items = data,
         i=1 //счётчик
         for (let item of items){

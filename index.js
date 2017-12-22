@@ -3,7 +3,7 @@ let
 request = require('./request-module'),
 fs = require('fs'),
 express = require('express'),
-channelId = 'UC4yqcgz49APdbgj0OMv7jpA',
+channelId = 'UCyUBW72KU30dfAYWLVNZO8Q',
 
 app = express(),
 port = process.env.PORT || 3000

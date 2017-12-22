@@ -6,9 +6,9 @@ lastVideoDate,
 
 answer = [] //Return all video items
 
-function getVideoItems(callback){
+function getVideoItems(callback, channelId){
 
-	request(__createRequest_link(null), function (error, response, body) {
+	request(__createRequest_link(null, channelId), function (error, response, body) {
     	//Check for error
     	if(error){
         	return console.log('Error: ', error);
@@ -46,10 +46,10 @@ function getVideoItems(callback){
 	});
 }
 
-function __createRequest_link(time) {
+function __createRequest_link(time, channelId) {
 	let request_link = {
 		url: 'https://www.googleapis.com/youtube/v3/search',
-    	qs: {part: 'snippet', order: 'date', publishedBefore: lastVideoDate, channelId: 'UC4yqcgz49APdbgj0OMv7jpA', maxResults: 50, key: 'AIzaSyAEc6reXtKwVemgtV9MypLcOHE2dnovLMY'},
+    	qs: {part: 'snippet', order: 'date', publishedBefore: lastVideoDate, channelId: channelId, maxResults: 50, key: 'AIzaSyAEc6reXtKwVemgtV9MypLcOHE2dnovLMY'},
     	method: 'GET',
 		}
 	request_link.publishedBefore = lastVideoDate
